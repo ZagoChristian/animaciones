@@ -1,0 +1,132 @@
+.box{
+    border-radius: 8px;
+    height: 40px;
+    width: 80px;
+    margin: 60px auto;
+}
+
+.box1{
+    background-color: mediumblue;
+}
+
+.box2{
+    background-color: mediumorchid;
+}
+
+
+.box:hover {
+    transform: scale(2);
+}
+
+.box2 {
+    transition:all;
+    transition-duration: 3s;
+
+}
+
+.circle1, .circle2, .circle3,
+.circle4, .circle5 {
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    margin: 20px;
+}
+
+.circle1{
+    background-color: midnightblue;
+    transition: all 1.5s ease;
+}
+.circle2{
+    background-color: orange;
+    transition: all 1.5s ease-in;
+}
+.circle3{
+    background-color: mediumvioletred;
+    transition: all 1.5s ease-in-out;
+}
+.circle4{
+    background-color: red;
+    transition: all 1.5s ease-out;
+}
+.circle5{
+    background-color: rosybrown;
+    transition: all 1.5s step-end;
+}
+
+.container-circle:hover .circle1,
+.container-circle:hover .circle2,
+.container-circle:hover .circle3,
+.container-circle:hover .circle4,
+.container-circle:hover .circle5 {
+    transform: translateX(300px);
+    
+}
+
+
+.square1, .square2 {
+    border-radius: 5px;
+    height: 150px;
+    width: 150px;
+    margin: 100px;
+    position: absolute;
+}
+
+.square1 {
+    background-color: royalblue;
+}
+.square2{
+    background-color: salmon;
+    transition: all 2s;
+}
+
+.square2:hover{
+    transform: translate(50px,30px)
+}
+
+
+.combinado {
+    background-color: violet;
+    height: 90px;
+    width: 90px;
+    margin: 50px auto;
+    transition: all 2s;
+
+}
+.combinado:hover {
+    transform: rotate(90deg) 
+     translateY(80px);
+}
+
+.animaciones{
+    width: 150px;
+    height: 150px;
+    margin: 75px auto;
+    background-color: mediumvioletred;
+}
+
+.animaciones:hover{
+    animation: change-color 5s ;
+}
+
+@keyframes change-color{
+    10% {
+        background-color:yellow ;
+    }
+
+    25%{
+        border-radius: 50%;
+    }
+
+    50%{
+        width: 300px;
+    }
+
+    75%{
+        background-color: rosybrown;
+    }
+
+    90%{
+        border-radius: 30% ;
+    }
+
+}
